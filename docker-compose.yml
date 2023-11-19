@@ -1,0 +1,9 @@
+version: "3"
+services:
+  myclang:
+    build:
+      context: .
+      dockerfile: .
+    tty: true
+    volumes:
+      - .:/app # ./app/{プロジェクト名}:/app
