@@ -3,7 +3,7 @@ services:
   myclang:
     build:
       context: .
-      dockerfile: .
+      dockerfile: ./Dockerfile
     tty: true
     volumes:
-      - .:/app # ./app/{プロジェクト名}:/app
+      - ./:/app # ./app/{プロジェクト名}:/app
